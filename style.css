@@ -17,19 +17,22 @@ body {
 
 nav {
 	height: 10vh;
-	width: 100%;
-	background: black;
-	margin-top: 0;
+}
+
+.logo-responsive {
+	display: none;
 }
 
 .nav-links {
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 0;
 	padding: 0;
+	background: black;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	height: 100%;
 }
+
 
 .logo {
 	color: white;
@@ -51,5 +54,83 @@ nav {
 	background-image: url('img/hero.jpeg');
 	background-size: cover;
 	height: 90vh;
+	width: 100%;
 	background-position: 8% 50%;
 }
+
+@media screen and (max-width: 768px) {
+	
+	nav {
+		position: relative;
+	}
+
+	.hamburger {
+		position: absolute;
+		cursor: pointer;
+		z-index: 2;		
+		right: 5%;
+		top: 50%;
+	}
+
+	.line {
+		width: 30px;
+		height: 3px;
+		background: white;
+		margin: 5px;
+	}
+
+	.nav-links {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.logo-responsive {
+		display: block;
+		color: white;
+		position: absolute;
+		z-index: 2;
+		left: 5%;
+		cursor: pointer;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.nav-links li {
+
+	}
+
+	.nav-links a {
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
