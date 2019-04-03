@@ -13,6 +13,43 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-	color: red;
+/*nav stuff starts here */
+
+nav {
+	height: 10vh;
+	width: 100%;
+	background: black;
+	margin-top: 0;
+}
+
+.nav-links {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo {
+	color: white;
+	margin-right: 20%;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: white;
+}
+
+/*hero image for the landing page*/
+
+.landing-hero {
+	background-image: url('img/hero.jpeg');
+	background-size: cover;
+	height: 90vh;
+	background-position: 8% 50%;
 }
