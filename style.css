@@ -163,6 +163,9 @@ nav {
 .inner-services-container {
 	width: 100%;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .inner-services-menu {
@@ -354,12 +357,12 @@ nav {
 	.about-left-section {
 		height: 30%;
 		width: 80%;
-		padding-top: 3%;
 		align-self: center;
 	}
 
 	.techniques-heading {
-		display: none;
+		/*display: none;*/
+		margin-top: 0;
 	}
 
 
@@ -372,7 +375,7 @@ nav {
 
 	.about-right-section {
 		background-image: url('img/shop1.jpeg');
-		background-position: 39% 50%;
+		background-position: center;
 		background-size: cover;
 		height: auto;
 		height: 60%;
@@ -380,15 +383,123 @@ nav {
 		margin: 0;
 	}
 
-	.techniques-heading-responsive {
-		color: white;
-		text-align: center;
-		width: 100%;
-		margin-bottom: 0;
+
+
+/*start of the services section===========================*/
+
+	.services {
+		height: 100vh;
+		background: black;
+		display: flex;
+		flex-direction: column;
+		padding: 6% 5% 5% 5%;
 	}
 
-	.techniques-heading-responsive::before,
-	.techniques-heading-responsive::after {
+	.book-now-btn {
+		height: 3rem;
+		font-size: 22px;
+		text-transform: uppercase;
+		width: 230px;
+		color: white;
+		border: 2px solid white;
+		text-align: center;
+		line-height: 3rem;
+		text-decoration: none;
+		margin: 0 auto;
+		margin-bottom: 18%;
+		margin-top: 4%;
+		background: rgba(0,0,0,.6);
+	}
+
+	.book-now-btn:hover {
+		background: rgba(0,0,0,1);
+	}
+
+	.services {
+		background: url('img/true_grit2.jpeg');
+		background-size: cover;
+		background-position: center;
+
+	}
+
+	.services-menu {
+		padding: 2%;
+		height: 70%;
+		width: 100%;
+		background: rgba(0,0,0,.5);
+		border: 2px solid white;
+		margin: 0;
+		display: flex;
+	}
+
+	.inner-services-container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.inner-services-menu {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: white;
+		font-size: 14px;
+	}
+
+	.inner-heading-services {
+		font-size: 18px;
+		letter-spacing: 1.5px;
+	}
+
+	.inner-paragraph-services {
+		font-size: 18px;
+		letter-spacing: 1.5px;
+	}
+
+/*beginning of the contact section================================*/
+
+	.contact {
+		height: 100vh;
+		width: 100%;
+		background: black;
+		padding: 5%;
+		display: flex;
+		flex-direction: column;	
+	}
+
+	.contact-container {
+		
+	}
+
+	.contact-left-photo {
+		background-image: url('img/guill_smiling.jpeg');
+		background-size: cover;
+		background-position: 17% 50%;
+		height: 50%;
+		width: 100%;
+		order: 1;
+	}
+
+	.contact-right-info {
+		order: 2;
+		width: 100%;
+		margin-left: 0;
+		background: black;
+		color: white;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact-us-heading {
+		color: white;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		order: 0;
+	}
+
+	.contact-us-heading:before,
+	.contact-us-heading:after {
 	    content: '';
 	    border-top: 2px solid;
 	    margin: 0 20px 0 0;
@@ -396,81 +507,33 @@ nav {
 	    color: white;
 	}
 
-	.techniques-heading-responsive::after {
-	    margin: 0 0 0 20px;
-	    color: white;
-	    width: 100%;
+	.inner-contact-container {
+		display: flex;
+		justify-content: space-around;
 	}
 
-/*start of the services section===========================*/
+	.contact-headings {
+		margin: 0;
+		margin-left: 30px;
+		margin-top: 30px;
+		margin-bottom: 35px;
+	}
 
-.services {
-	height: 100vh;
-	background: black;
-	display: flex;
-	flex-direction: column;
-	padding: 6% 5% 5% 5%;
-}
+	.contact-ul {
+		margin: 0;
+		padding: 0;
+		margin-left: 30px;
+	}
 
-.book-now-btn {
-	height: 3rem;
-	font-size: 22px;
-	text-transform: uppercase;
-	width: 230px;
-	color: white;
-	border: 2px solid white;
-	text-align: center;
-	line-height: 3rem;
-	text-decoration: none;
-	margin: 0 auto;
-	margin-bottom: 30%;
-	margin-top: 4%;
-	background: rgba(0,0,0,.6);
-}
+	.contact-ul li {
+		list-style: none;
+		margin: 0;
+	}
 
-.book-now-btn:hover {
-	background: rgba(0,0,0,1);
-}
-
-.services {
-	background: url('img/true_grit2.jpeg');
-	background-size: cover;
-	background-position: center;
-
-}
-
-.services-menu {
-	padding: 2%;
-	height: 50%;
-	width: 100%;
-	background: rgba(0,0,0,.5);
-	border: 2px solid white;
-	margin: 0;
-	display: flex;
-}
-
-.inner-services-container {
-	width: 100%;
-	height: 100%;
-}
-
-.inner-services-menu {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	color: white;
-	font-size: 14px;
-}
-
-.inner-heading-services {
-	font-size: 18px;
-	letter-spacing: 1.5px;
-}
-
-.inner-paragraph-services {
-	font-size: 18px;
-	letter-spacing: 1.5px;
-}	
+	.contact-right-info p {
+		margin: 0;
+		margin-left: 30px;
+	}		
 
 
 }
