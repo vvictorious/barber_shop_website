@@ -429,15 +429,16 @@ nav {
 
 	.contact-headings {
 		margin: 0;
-		margin-left: 30px;
+		margin-left: 0;
 		margin-top: 30px;
 		margin-bottom: 35px;
+		text-align: center;
 	}
 
 	.contact-ul {
 		margin: 0;
 		padding: 0;
-		margin-left: 30px;
+		margin-left: 0;
 	}
 
 	.contact-ul li {
@@ -447,7 +448,7 @@ nav {
 
 	.contact-right-info p {
 		margin: 0;
-		margin-left: 30px;
+		margin-left: 0;
 	}		
 
 }
@@ -539,7 +540,157 @@ nav {
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
+
+
+/*hero for landing page 450px ==============================*/
+
+
+.landing-hero {
+	background-image: url('img/hero.jpeg');
+	background-size: cover;
+	height: 90vh;
+	width: 100%;
+	background-position: 25% 50%;
+}	
+	
+/*start of the about section for 450px===========================*/
+
+	.about {
+		height: 100vh;
+		width: 100%;
+		padding: 5%;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		background: black;
+		font-size: 15px;
+	}
+
+	.about-left-section {
+		height: 30%;
+		width: 100%;
+		align-self: center;
+	}
+
+	.techniques-heading {
+		margin-top: 0;
+	}
+
+
+
+
+	.about-text {
+		color: white;
+		margin: 0;
+	}
+
+	.about-right-section {
+		background-image: url('img/shop1.jpeg');
+		background-position: 20% 50%;
+		background-size: cover;
+		height: auto;
+		height: 50%;
+		width: 100%;
+		margin: 0;
+	}	
+
+/*beginning of the contact section 1024px================================*/
+
+	.contact {
+		height: 100vh;
+		width: 100%;
+		background: black;
+		padding: 5%;
+		display: flex;
+		flex-direction: column;	
+	}
+
+	.contact-container {
+		
+	}
+
+	.contact-left-photo {
+		background-image: url('img/guill_smiling.jpeg');
+		background-size: cover;
+		background-position: 17% 50%;
+		height: 50%;
+		width: 100%;
+		order: 1;
+	}
+
+	.contact-right-info {
+		order: 2;
+		width: 100%;
+		margin-left: 0;
+		background: black;
+		color: white;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact-us-heading {
+		color: white;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		order: 0;
+	}
+
+	.contact-us-heading:before,
+	.contact-us-heading:after {
+	    content: '';
+	    border-top: 2px solid;
+	    margin: 0 20px 0 0;
+	    flex: 1 0 20px;
+	    color: white;
+	}
+
+	.inner-contact-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.contact-headings {
+		margin: 0;
+		margin-left: 0;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+
+	.contact-ul {
+		margin: 0;
+		text-align: center;
+	}
+
+	.contact-ul li {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+	}
+
+	.contact-right-info p {
+		margin: 0;
+		margin-left: 0;
+		font-size: 15px;
+		text-align: center;
+	}		
+
+}
+
+@media screen and (max-width: 320px) {
+	
+	.techniques-heading {
+		margin-bottom: 5%;
+	}
+
+	.about-left-section {
+		margin-bottom: 5%;
+	}
 	
 }
 
