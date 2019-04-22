@@ -17,6 +17,8 @@ body {
 
 .navbar {
 	background: black;
+	  min-height: 85px;
+	  height: auto !important;	
 }
 
 
