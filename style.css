@@ -17,8 +17,10 @@ body {
 
 .navbar {
 	background: black;
-	  min-height: 85px;
-	  height: auto !important;	
+}
+
+.navbar-collapse {
+	background-color: black;
 }
 
 
