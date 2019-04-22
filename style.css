@@ -20,6 +20,11 @@ body {
 	height: auto !important;
 }
 
+.show {
+	background: black;
+	width: 100%;
+}
+
 
 
 
