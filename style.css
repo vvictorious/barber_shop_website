@@ -17,11 +17,9 @@ body {
 
 .navbar {
 	background: black;
+	min-height: 60px;
 }
 
-.navbar-collapse {
-	background-color: black;
-}
 
 
 
